@@ -1,7 +1,7 @@
 body{
 	text-align: center;
 }
-.cback{
+.calbg{
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
@@ -19,6 +19,8 @@ body{
 	width:270px;
 	background-color: #8c8c8c;
 	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
 	border:0px;
 }
 
