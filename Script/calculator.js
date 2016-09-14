@@ -40,7 +40,6 @@ $(".sign.equal").click(function(){
 		displaydata(temp1,"#secondarydisplay")
 		temp1=eval(temp1);
 		temp1 = temp1.toString();
-		console.log(temp1);
 		displaydata(temp1);
 	});
 });
