@@ -2,27 +2,27 @@ $(document).ready(function(){
 
 var temp1="";
 
+//to concate the strings
 function stringconcate(val){
-
 	temp1=temp1.concat(val);
 	displaydata(temp1);
 } 
-
+// to display the date and by default its primary display
 function displaydata(temp1,location){
 
-if (location === undefined) {
-	location = "#primarydisplay";
-}
+	if (location === undefined) {
+		location = "#primarydisplay";
+	}
 
 	$(location).html(temp1);
 
 }
-	$(".btn").click(function(){
-		var val = $(this).attr("value");
-		
-		stringconcate(val);
 
+$(".btn").click(function(){
+	var val = $(this).val();
+	stringconcate(val);
 		});
+
 $(".sign.cc").click(function(){
 		displaydata(0);
 		displaydata("","#secondarydisplay");
